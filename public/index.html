@@ -1,0 +1,21 @@
+<style>
+    #canvas {
+        width: 300px;
+        height: 200px;
+    }
+</style>
+<canvas id="canvas"></canvas>
+<script type="x-shader/x-vertex" id="2d-vertex-shader">
+    attribute vec4 a_position;
+
+    void main() {
+        gl_Position = a_position;
+    }
+</script>
+<script type="x-shader/x-fragment" id="2d-fragment-shader">
+    precision mediump float;
+    void main() {
+        gl_FragColor = vec4(1, 0.5, 0.6, 1);
+    }
+</script>
+<script src="../dist/main/index.js"></script>
